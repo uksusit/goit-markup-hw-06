@@ -337,6 +337,11 @@ input.accept {
         /* 171.429% */
         letter-spacing: 0.42px;
 }
+.modal a {
+    color: var(--blue-color);
+        letter-spacing: 0.42px;
+        text-decoration-line: underline;
+}
 
 .submit {
     margin-top: 30px;
@@ -426,6 +431,12 @@ input.accept {
 .astronaut::before {
     background-image: url("../images/astronaut.svg");
 } */
+.new {
+    color: #2196F3;
+    fill: var(--blue-color);
+}
+
+
 
 /* common for section */
 .section ul {
