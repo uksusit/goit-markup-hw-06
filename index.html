@@ -332,19 +332,22 @@
                         <use href="./images/icons.svg#close-icon"></use>
                     </svg> 
                 </button>
-                <form action="">
+                <form  class="js-speaker-form" name="sighn-up" autocomplete="on" >
                     <p>Залиште свої дані, ми вам передзвонимо</p>
-                    <label for="user_name">Ім'я</label>
-                    <input type="text" name="name" id="user_name" placeholder="" autofocus/>
+                    <label class="form-label" for="user_name">Ім'я</label>                     
+                    <input type="text" name="name" id="user_name" placeholder=" " required autofocus/>
+                    <svg class="input-icon"> <use href="/images/icons.svg#person-input-icon"></use> </svg>
+
                     <label for="user-phone">Телефон</label>
-                    <input type="tel" name="phone" id="user_phone" placeholder="" />
+                    <input type="tel" name="phone" id="user_phone" placeholder=" " required/>
+                    
                     <label for="user-mail">Пошта</label>
-                    <input type="email" name="mail" id="user-mail" />
+                    <input type="email" name="mail" id="user-mail" placeholder=" " required/>
                     
                     <label for="coment">Коментар</label>                    
                     <textarea class="coment" name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
 
-                    <input class="accept" type="checkbox" id="accept"/>
+                    <input class="accept" type="checkbox" id="accept" required/>
                     <label for="accept">Погоджуюся з розсилкою та приймаю </label>
                     <a href="">Умови договору</a>
                     <div class="submit-thumb">
@@ -357,7 +360,7 @@
 
     <footer>
         <div class="container">
-            <div class="string">
+            <div class="">
             <a class="logo" href="./index.html" lang="en">Web<span>Studio</span></a> 
             <address>
                  <ul class="ftr-adr">
@@ -368,7 +371,7 @@
             </address>
             </div>
 
-            <div class="string givup">
+            <div class="givup">
             <p>приєднуйтесь</p>
             <ul class="social footer">
                 <li>
@@ -401,17 +404,39 @@
                 </li>
             </ul>
             </div>
-            <form class="string subscrb">
+            <form class="subscrb">
                 <p>Підпишіться на розсилку</p>
-                <label> <span class="visually-hidden">Email</span>
-                    <input name="email" type="email" placeholder="Email" />
-                </label>
-                <button type="submit">Підписатися</button>
+                <div class="string">
+                    <label> <span class="visually-hidden">Email</span>
+                        <input name="email" type="email" placeholder="E-mail" />
+                    </label>
+                    <div class="relative">                    
+                        <button type="submit">Підписатися</button>                        
+                        <svg class="send-icon">
+                            <use href="./images/icons.svg#send-icon"></use>
+                        </svg>
+                    </div>
+                </div>
             </form>
         </div>
 
     </footer>
     
     <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+                document
+                    .querySelector('.js-speaker-form')
+                    .addEventListener('submit', e => {
+                        e.preventDefault();
+
+                        new FormData(e.currentTarget).forEach((value, name) =>
+                            console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+            })();
+    </script>
 </body>
 </html>
