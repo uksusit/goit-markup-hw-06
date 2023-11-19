@@ -274,7 +274,7 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
 /* flex-shrink: 0; */
 }
 .close:hover, .close:focus {
-    border-color: var(--blue-color) ;
+    /* border-color: var(--blue-color) ; */
     fill: var(--blue-color);
     cursor: pointer;
 }
@@ -318,25 +318,13 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     position: relative;
 }
 
-.modal input:hover ,
-.modal input:focus {
-border-color: var(--blue-color);
-fill: var(--blue-color);
-cursor: pointer;
-}
 .input-icon {
     position: absolute;
     left: 12px;
-    top: 15px;
+    bottom: 11px;
     width: 18px;
     height: 18px;
 }
-.modal-input:hover,
-.modal-input:focus {
-    fill: var(--blue-color);
-    border-color: var(--blue-color);
-}
-
 .coment {
     width: 100%;
     height: 120px;
@@ -347,13 +335,25 @@ cursor: pointer;
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
 }
+/* .coment:hover {
+border-color: #188CE8;
+} */
+
+.modal input:hover,
+.modal-input:hover,
+.modal input:focus-within,
+.modal-input:focus-within {
+border-color: var(--blue-color);
+fill: var(--blue-color);
+cursor: pointer;
+}
 
 input.accept {
     width: 16px;
     height: 15px;
     margin-left: 12px;
     margin-top: 16px;
-        flex-shrink: 0;
+        /* flex-shrink: 0; */
 }
 /* .modal label:last-of-type */
 .accept + label {
@@ -368,6 +368,9 @@ input.accept {
     color: var(--blue-color);
         letter-spacing: 0.42px;
         text-decoration-line: underline;
+}
+.accept:checked {
+    color: var(--blue-color);
 }
 .submit-thumb {
     display: flex;
@@ -593,12 +596,13 @@ position: relative;
     align-items: center;
         border: none;
         border-radius: 4px;
-        background: #2196F3;
+        background: var(--blue-color) ;
     color: #FFF;
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.96px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 .subscrb input:hover, 
@@ -610,7 +614,7 @@ position: relative;
 }
 .subscrb button:hover,
 .subscrb button:focus {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: #188CE8;
 }
 .relative {
         position: relative;
