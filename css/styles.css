@@ -349,10 +349,12 @@ cursor: pointer;
 }
 
 input.accept {
+    /* appearance: none; */
     width: 16px;
     height: 15px;
     margin-left: 12px;
     margin-top: 16px;
+    fill: #000000;
         /* flex-shrink: 0; */
 }
 /* .modal label:last-of-type */
