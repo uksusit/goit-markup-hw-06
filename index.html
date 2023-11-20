@@ -360,16 +360,22 @@
                     </div>
                           
                     <label for="coment">Коментар</label>   
-                    <textarea class="coment modal-input" name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст">
+                    <textarea class="coment modal-input" name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст" >
                     </textarea>      
                                   
-                    <div  class="checkbox">
-                        <input class="accept" type="checkbox" id="accept" required/>                    
-                        <label for="accept">Погоджуюся з розсилкою та приймаю </label>
+                    <div  class="checkbox">                  
+                        <label class="laibel-checkbox">
+                        <input class="accept" type="checkbox"  required/>
+                            <span class="cust-chbox">
+                                <svg class="check-icon">
+                                    <use href="./images/icons.svg#check-input-icon"></use>
+                                </svg>
+                            </span>
+                            <span class="text-policy">
+                                Погоджуюся з розсилкою та приймаю 
+                            </span>
                         <a href="">Умови договору</a>
-                        <svg class="check-icon">
-                            <use href="./images/icons.svg#check-input-icon"></use>
-                        </svg>
+                        </label>
                     </div>
 
                     <div class="submit-thumb">
