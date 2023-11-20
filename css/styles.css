@@ -371,8 +371,16 @@ input.accept {
         letter-spacing: 0.42px;
         text-decoration-line: underline;
 }
-.accept:checked {
-    color: var(--blue-color);
+.check-icon {
+    width: 16px;
+    height: 15px;    
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    fill: #757575;
+}
+.accept:checked .check-icon {
+    background-color: var(--blue-color);
+    fill: yellow;
 }
 .submit-thumb {
     display: flex;
