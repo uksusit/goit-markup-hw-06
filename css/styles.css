@@ -302,7 +302,7 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.12px;
-        position: relative;
+        /* position: relative; */
 }
 .modal input {
     width: 100%;
@@ -324,20 +324,22 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     bottom: 11px;
     width: 18px;
     height: 18px;
+    pointer-events: none;
 }
-.coment {
+textarea.comment {
     width: 100%;
     height: 120px;
     resize: none;
     margin-top: 4px;
     padding: 12px 16px;
-        flex-shrink: 0;
+        /* flex-shrink: 0; */
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
 }
-/* .coment:hover {
+.comment:hover,
+.comment:focus {
 border-color: #188CE8;
-} */
+}
 
 .modal input:hover,
 .modal-input:hover,
@@ -354,7 +356,7 @@ cursor: pointer;
     
     margin-left: 12px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: baseline;
     align-items: center;
 }
 .label-checkbox {
@@ -381,12 +383,12 @@ input.accept {
 .text-policy {
     /* outline: auto; */
     margin-left: 7px;
-    color: #757575;
-font-family: Roboto;
+    /* color: #757575; */
+/* font-family: Roboto; */
 font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
+/* font-style: normal; */
+/* font-weight: 400; */
+/* line-height: 24px; 171.429% */
 letter-spacing: 0.42px;
 
 }
@@ -395,12 +397,12 @@ letter-spacing: 0.42px;
         letter-spacing: 0.42px;
         text-decoration-line: underline;
         /* color: #757575; */
-font-family: Roboto;
+/* font-family: Roboto; */
 font-size: 14px;
-font-style: normal;
-font-weight: 400;
+/* font-style: normal; */
+/* font-weight: 400; */
 line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+/* letter-spacing: 0.42px; */
 }
 .cust-chbox {
     display: inline-flex;
@@ -426,6 +428,9 @@ letter-spacing: 0.42px;
     border-radius: 2px;
     background-color: var(--blue-color);
     fill: var(--white-color);
+}
+.accept:hover + .cust-chbox, .accept:focus + .cust-chbox {
+outline-color: var(--blue-color);
 }
 .accept:checked + .cust-chbox ,
 .accept:checked + .cust-chbox .check-icon
