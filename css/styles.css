@@ -314,7 +314,7 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
         transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-        
+        outline: none;
 }
 .modal-input {
     position: relative;
@@ -344,14 +344,15 @@ label textarea.comment {
         border-color:  rgba(33, 33, 33, 0.20);
         transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 letter-spacing: 0.12px;
+outline: none;
 }
-.comment:hover,
+/* .comment:hover, */
 .comment:focus {
 border-color: #188CE8;
 }
 
-.modal input:hover,
-.modal-input:hover,
+/* .modal input:hover,
+.modal-input:hover, */
 .modal input:focus-within,
 .modal-input:focus-within {
 border-color: var(--blue-color);
@@ -402,12 +403,13 @@ letter-spacing: 0.42px;
     color: var(--blue-color);
         letter-spacing: 0.42px;
         text-decoration-line: underline;
+font-size: 14px;
+line-height: 24px; /* 171.429% */
+outline: none;
         /* color: #757575; */
 /* font-family: Roboto; */
-font-size: 14px;
 /* font-style: normal; */
 /* font-weight: 400; */
-line-height: 24px; /* 171.429% */
 /* letter-spacing: 0.42px; */
 }
 .cust-chbox {
@@ -440,7 +442,8 @@ line-height: 24px; /* 171.429% */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.accept:hover + .cust-chbox, .accept:focus + .cust-chbox {
+/* .accept:hover + .cust-chbox, */
+ .accept:focus + .cust-chbox {
 outline-color: var(--blue-color);
 border-color: #188CE8;
 }
@@ -481,7 +484,7 @@ border-color: #188CE8;
         transition-property: background-color border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    outline: none;
 }
 .submit:hover, .submit:focus {
         background: #188CE8;
@@ -672,6 +675,7 @@ position: relative;
         /* box-shadow: none; */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 .subscrb button {
     width: 200px;
@@ -689,10 +693,11 @@ position: relative;
         letter-spacing: 0.96px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* outline: none; */
 
 }
 .subscrb input:hover, 
-.subscrb input:focus,
+.subscrb input:focus-within,
 .subscrb input:active {
     border-color: var(--blue-color);
     /* border: 1px solid var(--blue-color); */
