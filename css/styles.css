@@ -644,7 +644,7 @@ position: relative;
 
 .subscrb {
     margin-left: 93px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 .subscrb p {
     margin-bottom: 20px;

@@ -6,7 +6,7 @@
     <title lang="en">WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
         <section  class="hero">
             <div class="container hero-thumb">
             <h1 class="title-hero">Ефективні рішення для вашого бізнесу   </h1>
-            <button type="button " class="btn prm" data-modal-open>Замовити послугу</button>
+            <button type="button" class="btn prm" data-modal-open>Замовити послугу</button>
             <!-- backdrop та modal шукай наприкінці main  -->  
             </div>
         </section>
@@ -278,42 +278,42 @@
                 <h2>Постійні клієнти</h2>
                 <ul class="w-margin">
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl1"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl2"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl3"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl4"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl5"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="client" href="" aria-level="логотип компанії">
+                        <a class="client" href="" aria-label="логотип компанії">
                             <svg class="icon-cli">
                                 <use href="./images/icons.svg#icon-cl6"></use>
                             </svg>
@@ -337,7 +337,7 @@
  
                     <div class="modal-input">
                     <label class="form-label">Ім'я
-                        <input type="text" name="name" placeholder=" " required autofocus />
+                        <input type="text" name="name" placeholder=" " required autofocus >
                         <svg class="input-icon"> 
                             <use href="./images/icons.svg#person-input-icon"></use> 
                         </svg>
@@ -346,7 +346,7 @@
 
                     <div class="modal-input">
                     <label >Телефон
-                        <input type="tel" name="phone"  placeholder=" " required/>
+                        <input type="tel" name="phone"  placeholder=" " required>
                         <svg class="input-icon">
                             <use href="./images/icons.svg#phone-input-icon"></use>
                         </svg>
@@ -355,7 +355,7 @@
 
                     <div class="modal-input">
                         <label >Пошта
-                        <input type="email" name="mail" placeholder=" " required/>
+                        <input type="email" name="mail" placeholder=" " required>
                         <svg class="input-icon">
                             <use href="./images/icons.svg#email-input-icon"></use>
                         </svg>
@@ -370,7 +370,7 @@
 
                     <div  class="checkbox">                  
                         <label class="label-checkbox">
-                            <input class="accept" name="accept" type="checkbox"  required/>
+                            <input class="accept" name="accept" type="checkbox"  required>
                             <span class="cust-chbox">
                                 <svg class="check-icon">
                                     <use href="./images/icons.svg#check-input-icon"></use>
@@ -442,15 +442,16 @@
             <form class="subscrb js-speaker-form">
                 <p>Підпишіться на розсилку</p>
                 <div class="string">
-                    <label> <span class="visually-hidden">Email</span>
-                        <input name="email" type="email" placeholder="E-mail" />
-                    </label>
-                    <div class="relative">                    
-                        <button type="submit">Підписатися</button>                        
-                        <svg class="send-icon">
-                            <use href="./images/icons.svg#send-icon"></use>
-                        </svg>
-                    </div>
+                    <!-- <label> <span class="visually-hidden">Email</span> -->
+                        <input name="email" type="email" placeholder="E-mail" >
+                    <!-- </label> -->
+                    <!-- <div>                     -->
+                        <button class="relative" type="submit">Підписатися                       
+                            <svg class="send-icon">
+                                <use href="./images/icons.svg#send-icon"></use>
+                            </svg>
+                        </button> 
+                    <!-- </div> -->
                 </div>
             </form>
         </div>
