@@ -405,7 +405,7 @@ letter-spacing: 0.42px;
         text-decoration-line: underline;
 font-size: 14px;
 line-height: 24px; /* 171.429% */
-outline: none;
+/* outline: none; */
         /* color: #757575; */
 /* font-family: Roboto; */
 /* font-style: normal; */
@@ -484,7 +484,7 @@ border-color: #188CE8;
         transition-property: background-color border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
+    /* outline: none; */
 }
 .submit:hover, .submit:focus {
         background: #188CE8;
